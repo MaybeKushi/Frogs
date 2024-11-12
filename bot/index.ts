@@ -6,13 +6,13 @@ const app: Application = express();
 app.use(express.static("static"));
 app.use(express.json());
 app.get("/", (_, res) => {
-  res.send("Hello World");
+  res.send("Hello World !");
 });
 app.listen(PORT, () => {
-  console.log(`Server is Fire at http://localhost:${PORT}`);
+  console.log(`Server Is Fire at http://localhost:${PORT}`);
 });
 bot.command("start", (ctx) => {
-  return ctx.reply(`Play Cool Frog!`, {
+  return ctx.reply(`Play Cool Frog !`, {
     reply_markup: {
       inline_keyboard: [
         [
